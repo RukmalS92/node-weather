@@ -20,7 +20,7 @@ weatherform.addEventListener('submit', (e) => {
     messageOne.textContent = 'Loading...'
     messageTwo.textContent = ''
 
-    const url = 'http://localhost:3000/weather?address=' + encodeURIComponent(location) 
+    const url = '/weather?address=' + encodeURIComponent(location) 
     fetch(url, {
         method: 'GET',
     })
