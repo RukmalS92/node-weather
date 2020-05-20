@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="/images/weather.png">
+        <link rel="stylesheet" href="/css/bootstrap.css">
+        
+    </head>
+    <body>
+        {{!-- using hbs partials {like templates} --}}
+        {{>header}} 
+
+        <main role="main" class="container">
+            <div class="jumbotron" >
+                <p>You Weather Report!</p>
+                <form id="weatherform">
+                    <input type="text" placeholder="location">
+                    <button>Search</button>
+                </form>
+                <p id="p1"></p>
+                <p id="p2"></p>
+            </div>
+        </main>
+        {{!-- <h1>{{title}}</h1> --}}
+        {{!-- <p>{{name}}</p> --}}
+
+        {{>footer}}
+        <script src="/js/client.js"></script>
+    </body>
+</html>
+
+
+{{!-- ---------------------------------------------------------------------------------------------- --}}
+
