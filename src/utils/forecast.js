@@ -15,7 +15,8 @@ var forecast = (latitude, longitude, callback) => {
             if(code === '200')
             {
                 let data = {
-                    temperature : body.main.feels_like
+                    temperature : body.main.feels_like,
+                    humidity : body.main.humidity
                 }
                 callback(undefined, data)
             }
